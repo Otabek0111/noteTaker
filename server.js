@@ -19,7 +19,6 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 // API routes
 // GET / POST / DELETE
 // Get route
@@ -48,50 +47,48 @@ app.get("/api/notes", (req, res) => {
 });
 
 // Post
-app.post('/api/notes', (req, res) => {
-    const newNote = req.body;
-    console.log("note");
-    // Generate a unique ID for the new note
-    newNote.id = uuidv4(); // Call the uuid.v4 function
-  
-    // Push the new note to the database
-    db.push(newNote);
+app.post("/api/notes", (req, res) => {
+  const newNote = req.body;
+  console.log("note");
+  // Generate a unique ID for the new note
+  newNote.id = uuidv4(); // Call the uuid.v4 function
 
-    // Write the updated database back to the JSON file
-    fs.writeFile('./db/db.json', JSON.stringify(db), (err) => {
-        if (err) {
-            console.error(err);
-            res.status(500).json({ error: 'An error occurred while saving the note.' });
-            return;
-        }
-        console.log('Note saved successfully');
-        res.json(db);
-    });
+  // Push the new note to the database
+  db.push(newNote);
+
+  // Write the updated database back to the JSON file
+  fs.writeFile("./db/db.json", JSON.stringify(db), (err) => {
+    if (err) {
+      console.error(err);
+      res
+        .status(500)
+        .json({ error: "An error occurred while saving the note." });
+      return;
+    }
+    console.log("Note saved successfully");
+    res.json(db);
+  });
 });
 
 // Delete
 
-app.delete("/api/notes/:id", async (req, res) => {
-  try {
-    // Read the current database from the file
-    const data = await fs.readFile(dbFilePath, "utf8");
-    const db = JSON.parse(data);
-
-    // Filter out the note with the specified ID
-    const newDb = db.filter((note) => note.id !== req.params.id);
-
-    // Write the updated database back to the JSON file
-    await fs.writeFile(dbFilePath, JSON.stringify(newDb));
-
-    // Send the updated database back to the user
-    res.json(newDb);
-  } catch (error) {
-    console.error(error);
-    res
-      .status(500)
-      .json({ error: "An error occurred while processing the request." });
-  }
+app.delete("/api/notes/:id", (req, res) => {
+  const newDB = db.filter((note) => note.id !== req.params.id);
+  fs.writeFileSync("./db/db.json", JSON.stringify(newDB))
+  readFile.json(newDB);
 });
+
+// app.delete('/api/notes/:id', (req, res) => {
+//   const newDb = db.filter((note) =>
+//       note.id !== req.params.id)
+
+//   // update the db.json file to reflect the modified notes array
+//   fs.writeFileSync('./db/db.json', JSON.stringify(newDb))
+
+//   // send that removed note object back to user
+//   readFile.json(newDb)
+  
+
 
 // home page
 app.get("/", (req, res) => {
