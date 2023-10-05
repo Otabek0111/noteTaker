@@ -6,7 +6,7 @@ body {
 }
 
 .save-note, .new-note, .clear-btn {
-  /* display: none; */
+  display: none;
 }
 
 .icons {
@@ -26,8 +26,7 @@ body {
 
 .note-textarea {
   resize: none;
-  /* height: calc(100% - 63px); */
-  height: 30vh;
+  height: calc(100% - 63px);
   padding-top: 15px;
 }
 
@@ -44,6 +43,7 @@ body {
 
 .list-container .card {
   height: calc(100vh - 70px);
+  width: 90%;
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -63,11 +63,11 @@ body {
 
 .list-item-title {
   display: inline-block;
-  width: 75%;
+  width: 90%;
 }
 
 .list-container i {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
