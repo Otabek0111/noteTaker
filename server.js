@@ -78,17 +78,6 @@ app.delete("/api/notes/:id", (req, res) => {
   readFile.json(newDB);
 });
 
-// app.delete('/api/notes/:id', (req, res) => {
-//   const newDb = db.filter((note) =>
-//       note.id !== req.params.id)
-
-//   // update the db.json file to reflect the modified notes array
-//   fs.writeFileSync('./db/db.json', JSON.stringify(newDb))
-
-//   // send that removed note object back to user
-//   readFile.json(newDb)
-  
-
 
 // home page
 app.get("/", (req, res) => {
