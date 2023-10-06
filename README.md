@@ -7,9 +7,8 @@ This is a simple note-taking application designed to cater to the needs of small
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
-
+- [ScreenShot](#screenShots)
 ---
 
 ## Features
@@ -48,6 +47,15 @@ This is a simple note-taking application designed to cater to the needs of small
 
 To use this note-taking application, you don't need to install anything on your local machine. Simply visit the provided URL in your web browser, and you can start using the application immediately.
 
+If live deployment link not provided/working follow these steps: 
+
+1. Clone the Repository 
+2. Open Server.js in intergrated terminal 
+3. Install node package manager by entering 'npm install'
+4. Then enter nodemon server.js 
+5. You will receive a message with a localhost port with the working note taker.
+6. Open the provided localhost port and use the note taker in your local device!
+
 ---
 
 ## Usage
@@ -71,11 +79,12 @@ To use this note-taking application, you don't need to install anything on your 
 
 ---
 
-## Contributing
+## Screenshots
 
-Contributions are welcome! If you would like to contribute to the development of this note-taking application, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+![ScreenShot](./public/assets/imgs/SS.png)
 
 ---
+
 
 ## License
 
