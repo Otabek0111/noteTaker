@@ -8,7 +8,7 @@ This is a simple note-taking application designed to cater to the needs of small
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [ScreenShot](#screenShots)
+- [Screen Shot](#ScreenShots) 
 ---
 
 ## Features
@@ -79,7 +79,7 @@ If live deployment link not provided/working follow these steps:
 
 ---
 
-## Screenshots
+## ScreenShots
 
 ![ScreenShot](./public/assets/imgs/SS.png)
 
