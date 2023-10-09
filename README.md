@@ -1,3 +1,4 @@
+
 # Note-Taking Application
 
 This is a simple note-taking application designed to cater to the needs of small business owners who want to write and save notes for organizing their thoughts and keeping track of tasks. This README file will guide you through the application's features and usage.
@@ -8,7 +9,7 @@ This is a simple note-taking application designed to cater to the needs of small
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Screen Shot](#ScreenShots) 
+- [Demo](#demo) 
 ---
 
 ## Features
@@ -77,14 +78,15 @@ If live deployment link not provided/working follow these steps:
    - After viewing an existing note, click the "New Note" button in the navigation.
    - Enter new note details in the right-hand column and click "Save Note."
 
----
-
-## ScreenShots
-
-![ScreenShot](./public/assets/imgs/SS.png)
 
 ---
 
+
+## Demo  
+
+[App use Video ](https://watch.screencastify.com/v/URi9mmeNh2kk42EYgkwc)
+
+[Temerary Deployment Link](https://safe-refuge-13003-2824f45ec351.herokuapp.com/notes) 
 
 ## License
 
