@@ -88,6 +88,10 @@ If live deployment link not provided/working follow these steps:
 
 [Temerary Deployment Link](https://safe-refuge-13003-2824f45ec351.herokuapp.com/notes) 
 
+![Screen Shot](./public/assets/imgs/SS.png)
+
+
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE), which means you are free to use, modify, and distribute the code as long as you provide appropriate attribution and adhere to the terms of the license.
