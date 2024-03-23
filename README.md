@@ -1,7 +1,7 @@
 
 # Note-Taking Application
 
-[Temerary Deployment Link](https://safe-refuge-13003-2824f45ec351.herokuapp.com/notes) 
+[Temerary Deployment Link](https://note-taker-oi-3dc9ff689966.herokuapp.com/)
 
 This is a simple note-taking application designed to cater to the needs of small business owners who want to write and save notes for organizing their thoughts and keeping track of tasks. This README file will guide you through the application's features and usage.
 
@@ -86,13 +86,11 @@ If live deployment link not provided/working follow these steps:
 
 ## Demo  
 
+[Temerary Deployment Link](https://note-taker-oi-3dc9ff689966.herokuapp.com/)
+
 [App use Video ](https://watch.screencastify.com/v/URi9mmeNh2kk42EYgkwc)
 
-[Temerary Deployment Link](https://safe-refuge-13003-2824f45ec351.herokuapp.com/notes) 
-
 ![Screen Shot](./public/assets/imgs/SS.png)
-
-
 
 ## License
 
